@@ -1,73 +1,19 @@
-<div align="center">
-    <h1>Interstellar Proxy</h1>
-    </div>
-One of the most popular web proxies, used by over 5.7 million people in 2023.
+偽装ページが違うやつ  
+ブログをブロックされるとき用  
+ASGIで動く  
+deployボタンは追加していく予定です  
+blog内に静的サイトを入れると認証されていない時にそのサイトが表示されます。  
+画像は使えません。  
+cookieにyuki=Trueを設定すると認証されます。  
+サーバーの起動時に掲示板の公式インスタンスに接続します。定期的にサーバーを再起動してください。  
 
-### Consider joining our[ Discord Community](https://discord.gg/interstellar)
-
-> If you find this project useful, consider giving it a star in the original repository.
-
-<h2 align="center">Features</h2>
-<ul>
-    <li>About:Blank Cloaking</li>
-    <li>Fast Speeds</li>
-    <li>Wide collection of Games</li>
-    <li>Tab Cloaking</li>
-    <li>Wide collection of Apps</li>
-    <li>Built-In Tab System</li>
-    <li>Clean UI</li>
-    <li>Inspect Element</li>
-    <li>Now.GG Support</li>
-    <li>Built in Password Protection</li>
-    <li>Geforce Now Support</li>
-</ul>
-
-<h2 align="center">Deployment</h2>
-
-### Easy Deployment
-
-**Note:** You **cannot** deploy to static web hosts, including Netlify, Cloudflare Pages, and GitHub Pages.
-
-<a target="_blank" href="https://heroku.com/deploy/?template=https://github.com/interstellarnetwork/interstellar"><img alt="Deploy to Heroku" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/heroku.svg"></a>
-<a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/interstellarnetwork/interstellar"><img alt="Deploy to Koyeb" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg"></a>
-<a target="_blank" href="https://render.com/deploy?repo=https://github.com/InterstellarNetwork/IN-Render"><img alt="Deploy to Render" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/render.svg"></a>
-<a target="_blank" href="https://app.cyclic.sh/api/app/deploy/interstellarnetwork/Interstellar"><img alt="Deploy to Cyclic" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/cyclic.svg"></a>
-
-## Deployment Alternatives:
-
-For more deployment options join our [Discord Server](https://discord.gg/interstellar) for tons of different ways to deploy Interstellar.
-
-#### What happened to Replit Deployment?
-
-As of January 1st 2024, Replit is [no longer free](https://blog.replit.com/hosting-changes). Try GitHub Codespaces instead.
-
-### GitHub Codespaces:
-
-1. Create a GitHub account if you haven't already.
-2. Click "Code" (green button) and then "Create Codespace on main."
-3. In the terminal at the bottom, paste `npm i && npm run start`.
-4. Respond to the application popup by clicking "Make public."
-   > Make sure you actually click the "Make public." button, or the proxy won't function properly.
-5. Access the deployed website from the ports tab.
-6. For subsequent uses in the same codespace, just run `npm run start`
-
-### Solution for if there is no popup.
-
-1. Edit the `index.js` file and edit the **Port** to a different number, don't use 8080.
-2. Click Terminal, and paste `npm i && npm run start`.
-3. Go to the ports tab, Click Foward A Port, And type the port number.
-4. Right click Visibility and set Port Visibility to Public.
-
-## Need Help with Deployment?
-
-If you're having trouble, reach out to us on [Discord](https://discord.gg/interstellar) for personalized support.
-
-### Report Issues:
-
-If you encounter problems, open an issue on GitHub, and we'll address it promptly.
-
-# Credits
-
-A huge thank you to all of the people who have contributed to Interstellar.
-
-[![Contributors](https://contrib.rocks/image?repo=InterstellarNetwork/Interstellar)](https://github.com/InterstellarNetwork/Interstellar/graphs/contributors)
+Renderを使用する場合の手順  
+1~4の作業をやらないと、自動でURLがyuki-tangolevel-[4桁の英数字].onrender.comになります。  
+1.githubアカウントを作成する  
+2.リポジトリを作る(名前はなんでもいい)(プライベートリポジトリにすることをおすすめします)  
+3.import codeを押して https://github.com/mochidukiyukimi/Yuki-Youtube-slim/ と入力  
+4.render.yamlを開いて編集(鉛筆のマーク)を押し、nameの横のyuki-youtube-slimをサイトのurlの最初の部分にしたい文字列に変更する。(yuki-yだったらurlはhttps://yuki-y.onrender.comになる)  
+5.Deploy to renderボタンを押し、Service Group Nameに適当な文字列を入れてapply(事前にrenderのアカウントを作っておく)
+<a href="https://render.com/deploy?repo=https://github.com/mochidukiyukimi/Yuki-Youtube-slim-2">
+<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+</a>
